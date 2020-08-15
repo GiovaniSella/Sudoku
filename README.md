@@ -1,7 +1,7 @@
 # Sudoku
- programa em Processing que resolve sudokus.
+ programa em Processing para Windows ou Android que resolve sudokus.
  
- O arquivo principal é o "Sudoku-Desktop" e junto com ele está o arquivo "Tabela" que é onde está a unica classe do programa inteiro.  
+ O arquivo principal é o "Sudoku-Desktop" ou "Sudoku-Android" e junto com cada um deles está o arquivo "Tabela" que é onde está a unica classe do programa inteiro.
 
 # Lista de coisas para fazer
 
