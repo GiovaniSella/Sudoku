@@ -365,22 +365,22 @@ public
   
         fill(200);
         noStroke();
-        rect((((width*0.9)/9)*(y)), (((width*0.9)/9)*(5+x)), (width*0.9)/9-6, (width*0.9)/9-6);
+        rect((((width*0.7)/9)*(1.5+y)), (((height*0.7)/9)*(1.5+x)), 55, 55);
         if(tab[x][y] != 0){
           fill(20);
           textSize(40);
-          text(tab[x][y], (((width*0.9)/9)*(y)), (((width*0.9)/9)*(5.2+x)));
+          text(tab[x][y], (((width*0.7)/9)*(1.5+y)), (((height*0.7)/9)*(1.75+x)));
         }
   
         if (x == 3 || x == 6){
-          noStroke();
-          fill(40);
-          rect(((width*0.9)/9)*(x+0.5), height/2.03, 6, (width*0.9));
+          stroke(50);
+          strokeWeight(5);
+          line((((width*0.7)/9)*(2+x)), 130, (((width*0.7)/9)*(2+x)), 680);
         }
         if (y == 3 || y == 6){
-          noStroke();
-          fill(40);
-          rect(width/2, ((width*0.9)/9)*(y+5.5), (width*0.9), 6);
+          stroke(50);
+          strokeWeight(5);
+          line(130,(((height*0.7)/9)*(2+y)), 680, (((height*0.7)/9)*(2+y)));
         }
       }
     }
