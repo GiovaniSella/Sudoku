@@ -21,4 +21,4 @@
 
 ## Resolver bugs:
 - adição de numero aleatórios em lugares aleatórios;
-- zerar tabela do jeito certo;
+- Revizar o sudoku exemplo despois de solucionado pela 1ª vez;
