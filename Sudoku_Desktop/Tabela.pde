@@ -342,21 +342,39 @@ class tabela{
 public
 
   void resolver(){
-    int na = 1, qa;
-    for(na = 1; na <=9; na++){
-      for(qa = 1; qa <= 9; qa++){
-        if(checarquad(na, qa) ==1){
-            checarlinha(na, qa);
-            checarcoluna(na, qa);
-            tirarusado(qa);
-            checkpossibilidades(na, qa);
-            mudanca(na, qa);
-  
+    int na, qa, aux = 1;
+    
+     while(aux >= 1){
+      for (int x = 1; x <=9; x++){
+        for(int y = 1; y <=9; y++){
+          if (tab[x][y] == 0){
+            aux++;
+          }
         }
       }
-    }
-    mudancap();
-    limpar();
+      
+      if(aux <= 1){
+        aux = 0;
+      }else{
+        aux = 1;
+      }
+      
+      for(na = 1; na <=9; na++){
+        for(qa = 1; qa <= 9; qa++){
+          if(checarquad(na, qa) ==1){
+              checarlinha(na, qa);
+              checarcoluna(na, qa);
+              tirarusado(qa);
+              checkpossibilidades(na, qa);
+              mudanca(na, qa);
+    
+          }
+        }
+      }
+      mudancap();
+      limpar();
+     }
+    
   }
   
   void desenhartabela(){

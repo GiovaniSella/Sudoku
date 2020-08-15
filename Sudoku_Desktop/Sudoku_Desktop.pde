@@ -1,18 +1,18 @@
+//Cria o objeto da classe Tabela
 tabela tab = new tabela();
+
+
 int press = 0;
-void setup() {
+
+//os codigos do void setup acontecem só uma vez
+void setup() { 
   size(800, 800);
   background(100);
   textAlign(CENTER);
   rectMode(CENTER);
-  
 }
+
 void draw() {
-  
-  if(press >= 1){
-    tab.resolver();
-  }
-  
   desenharlayout();
   tab.desenhartabela();
 }
@@ -23,7 +23,7 @@ void mousePressed(){
     tab.zerartabela();
   }
   if(mouseY > 700 & mouseX < 290){
-    press = 1;
+    tab.resolver();
   }
   if(mouseY <= 100){
     tab.exemplo(1);
