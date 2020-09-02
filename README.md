@@ -6,9 +6,6 @@
 # Lista de coisas para fazer
 
 ## Melhorar interface:
-- colocar de cor diferente os numeros principais (os do começo);
-- cores melhores;
-- divisão de cada quadrado melhor;
 - melhorar botoes;
 - mais sudokus exemplo;
 - adicionar painel de informaçoes;

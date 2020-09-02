@@ -10,6 +10,7 @@ void setup() {
   background(73, 139, 166);
   textAlign(CENTER);
   rectMode(CENTER);
+  tab.checkCorTexto();
 }
 
 void draw() {
@@ -23,6 +24,7 @@ void mousePressed(){
     tab.zerartabela();
   }
   if(mouseY > 700 & mouseX < 290){
+    tab.checkCorTexto();
     tab.resolver();
   }
   if(mouseY <= 100){
