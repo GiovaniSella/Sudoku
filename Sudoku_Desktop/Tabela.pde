@@ -378,10 +378,15 @@ public
   }
   
   void desenhartabela(){
+    float w1 = ((width*0.7)/9)*(2+1) - 60;
+    float w9 = ((width*0.7)/9)*(2+9);
+    float h1 = (((height*0.7)/9)*(2+1)-60);
+    float h9 = (((height*0.7)/9)*(2+9));
+    
     for(byte y = 1; y <= 9 ;y++){
       for(byte x = 1; x <= 9 ;x++){
   
-        fill(200);
+        fill(242, 242, 242);
         noStroke();
         rect((((width*0.7)/9)*(1.5+y)), (((height*0.7)/9)*(1.5+x)), 55, 55);
         if(tab[x][y] != 0){
@@ -389,17 +394,20 @@ public
           textSize(40);
           text(tab[x][y], (((width*0.7)/9)*(1.5+y)), (((height*0.7)/9)*(1.75+x)));
         }
-  
         if (x == 3 || x == 6){
-          stroke(50);
-          strokeWeight(5);
-          line((((width*0.7)/9)*(2+x)), 130, (((width*0.7)/9)*(2+x)), 680);
+          stroke(38, 101, 140);
+          strokeWeight(6);
+          line((((width*0.7)/9)*(2+x)), h1, (((width*0.7)/9)*(2+x)), h9);
         }
         if (y == 3 || y == 6){
-          stroke(50);
-          strokeWeight(5);
-          line(130,(((height*0.7)/9)*(2+y)), 680, (((height*0.7)/9)*(2+y)));
+          stroke(38, 101, 140);
+          strokeWeight(6);
+          line(h1,(((height*0.7)/9)*(2+y)), w9, (((height*0.7)/9)*(2+y)));
         }
+        line(w1, h1, w9, h1);
+        line(w1, h9, w9, h9);
+        line(h9, w9, h9, w1);
+        line(h1, w1, h1, w9);
       }
     }
   }  

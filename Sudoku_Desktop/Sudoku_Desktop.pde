@@ -7,7 +7,7 @@ int press = 0;
 //os codigos do void setup acontecem só uma vez
 void setup() { 
   size(800, 800);
-  background(100);
+  background(73, 139, 166);
   textAlign(CENTER);
   rectMode(CENTER);
 }
@@ -43,18 +43,36 @@ void mousePressed(){
 }
 
 void desenharlayout(){
-  fill(40);
+  fill(242, 219, 174);
   noStroke();
-  rect(width/4, 740, 350, 70);
+  rect(width/4, 740, 350, 40);
+  rect(width/4, 740, 310, 80);
+  ellipse(width/4+310/2, 740-40/2, 40, 40);
+  ellipse(width/4+310/2, 740+40/2, 40, 40);
+  ellipse(width/4-310/2, 740-40/2, 40, 40);
+  ellipse(width/4-310/2, 740+40/2, 40, 40);
   textSize(40);
-  fill(200);
+  fill(38, 101, 140);
   text("RESOLVER",width/4, 755);
-  fill(40);
-  rect(width/4*3, 740, 350, 70);
-  fill(200);
+  
+  fill(242, 219, 174);
+  rect(width/4*3, 740, 350, 40);
+  rect(width/4*3, 740, 310, 80);
+  ellipse(width/4*3+310/2, 740+40/2, 40, 40);
+  ellipse(width/4*3+310/2, 740-40/2, 40, 40);
+  ellipse(width/4*3-310/2, 740+40/2, 40, 40);
+  ellipse(width/4*3-310/2, 740-40/2, 40, 40);
+  fill(38, 101, 140);
   text("ZERAR TABELA",width/4*3, 755);
-  fill(40);
-  rect(width/2, 50, 400, 70);
-  fill(200);
+  
+  fill(242, 219, 174);
+  rect(width/2, 50, 350, 40);
+  rect(width/2, 50, 310, 80);
+  ellipse(width/2+310/2, 50+40/2, 40, 40);
+  ellipse(width/2+310/2, 50-40/2, 40, 40);
+  ellipse(width/2-310/2, 50+40/2, 40, 40);
+  ellipse(width/2-310/2, 50-40/2, 40, 40);
+  fill(38, 101, 140);
+  textSize(35);
   text("SUDOKU EXEMPLO",width/2, 60);
 }
